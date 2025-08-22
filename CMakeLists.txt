@@ -1,11 +1,9 @@
-cmake_minimum_required(VERSION 3.15)
-project(exercise1)
+cmake_minimum_required(VERSION 3.15)  # adjust as needed
+project(libname)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(SHARED_SOURCES
-        src/main.cpp
-)
+include_directories(${PROJECT_SOURCE_DIR}/include)
 
-add_executable(MAIN src/main.cpp ${SHARED_SOURCES})
-target_include_directories(MAIN PRIVATE include/libname)
+add_subdirectory(src)
+add_subdirectory(tests)

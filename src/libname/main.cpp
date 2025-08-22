@@ -2,8 +2,8 @@
 #include <iostream>
 #include <vector>
 
-#include "person.hpp"
-#include "greetPerson.hpp"
+#include "libname/person.hpp"
+#include "libname/greetPerson.hpp"
 
 int main() {
     std::vector<std::string> firstNames = {"Alice", "Bob", "Charlie"};
